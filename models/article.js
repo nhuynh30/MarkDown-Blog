@@ -22,14 +22,15 @@ const articleSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true
-    }
+    },
+
 })
 
-articleSchema.pre('validate', function (next) {
+articleSchema.pre('validate', function () {
     if (this.title) {
         this.slug = slugify(this.title, { lower: true, strict: true })
     }
-    next();
+
 })
 
 module.exports = mongoose.model('Article', articleSchema);
