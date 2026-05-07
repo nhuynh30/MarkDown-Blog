@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/nhuynh30/MarkDown-Blog#readme",
   "dependencies": {
+    "dompurify": "^3.4.2",
     "ejs": "^5.0.2",
     "express": "^5.2.1",
+    "jsdom": "^29.1.1",
     "marked": "^18.0.3",
+    "method-override": "^3.0.0",
     "mongoose": "^9.6.1",
     "slugify": "^1.6.9"
   },
